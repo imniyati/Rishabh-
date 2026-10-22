@@ -3,113 +3,340 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Little Surprise for Rishabh ♡</title>
+<title>For Rishabh ♡</title>
+
 <style>
-  :root { --pink:#ffe8f0; --rose:#e76f96; --deep:#a83e68; --cream:#fffafc; }
-  * { box-sizing:border-box; }
-  body {
-    margin:0; min-height:100vh; display:grid; place-items:center; padding:22px;
-    font-family: Georgia, "Times New Roman", serif; color:#71384e;
-    background:radial-gradient(circle at top left,#fff7fa 0,#ffe4ee 42%,#ffd8e7 100%);
-    overflow-x:hidden;
-  }
-  .hearts { position:fixed; inset:0; pointer-events:none; overflow:hidden; opacity:.55; }
-  .hearts span { position:absolute; animation: float 9s linear infinite; font-size:22px; }
-  .hearts span:nth-child(1){left:8%;top:105%;animation-delay:0s}
-  .hearts span:nth-child(2){left:27%;top:110%;animation-delay:2s;font-size:16px}
-  .hearts span:nth-child(3){left:65%;top:105%;animation-delay:4s}
-  .hearts span:nth-child(4){left:88%;top:115%;animation-delay:1s;font-size:18px}
-  @keyframes float { to { transform:translateY(-125vh) rotate(22deg); } }
-  .card {
-    position:relative; width:min(100%,470px); padding:30px 23px; text-align:center;
-    border:1px solid #f7c3d5; border-radius:28px; background:rgba(255,250,252,.93);
-    box-shadow:0 18px 55px rgba(168,62,104,.16);
-  }
-  .tiny { color:var(--rose); letter-spacing:2px; text-transform:uppercase; font:11px Arial,sans-serif; }
-  h1 { font-size:clamp(29px,8vw,40px); line-height:1.12; margin:12px 0; color:var(--deep); }
-  p { line-height:1.75; font-size:16px; }
-  .decor { font-size:28px; margin:8px 0 14px; }
-  button {
-    border:0; border-radius:999px; padding:14px 23px; font-size:15px; cursor:pointer;
-    color:white; background:linear-gradient(135deg,#e979a0,#c94f7c);
-    box-shadow:0 8px 18px #e979a044; margin:8px 4px; font-weight:bold;
-  }
-  button:focus-visible { outline:3px solid #a83e68; outline-offset:3px; }
-  .hidden { display:none; }
-  .photo-frame { background:white; padding:10px 10px 35px; border-radius:5px; transform:rotate(-2deg);
-    box-shadow:0 8px 24px #8b476022; margin:24px auto 22px; max-width:310px; }
-  .photo-frame img { width:100%; aspect-ratio:4/5; object-fit:cover; display:block; background:#ffe0eb; }
-  .caption { font-size:14px; margin-top:10px; color:#a65373; }
-  .note { background:#fff0f5; border:1px dashed #ed9bb8; border-radius:18px; padding:18px; margin:18px 0; text-align:left; }
-  .note p { margin:0 0 12px; }
-  .note p:last-child { margin-bottom:0; }
-  .music-help { font:12px Arial,sans-serif; color:#9c6277; }
-  footer { margin-top:20px; font-size:12px; color:#b77b91; }
-  a { color:#a83e68; }
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, serif;
+  color: #85405b;
+  background: linear-gradient(135deg, #fff0f5, #ffd6e5, #ffeaf2);
+}
+
+.card {
+  width: 100%;
+  max-width: 590px;
+  padding: 30px 22px;
+  text-align: center;
+  background: #fffafd;
+  border: 1px solid #ffc0d5;
+  border-radius: 30px;
+  box-shadow: 0 15px 45px #c85b831e;
+}
+
+.hidden { display: none !important; }
+
+.eyebrow {
+  color: #e66d98;
+  font: 12px Arial, sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #b33e70;
+  font-size: clamp(30px, 7vw, 43px);
+  margin: 18px 0;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 23px;
+  margin: 10px 4px;
+  color: white;
+  background: linear-gradient(135deg, #ee80a7, #c8497d);
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 7px 18px #c8497d25;
+}
+
+button:focus-visible {
+  outline: 3px solid #b33e70;
+  outline-offset: 3px;
+}
+
+.bows {
+  margin: 20px;
+  font-size: 28px;
+}
+
+.footer {
+  margin-top: 24px;
+  color: #c17c98;
+  font-size: 13px;
+}
+
+.photo-frame {
+  max-width: 340px;
+  margin: 28px auto;
+  padding: 12px 12px 25px;
+  background: white;
+  box-shadow: 0 8px 28px #b94d7720;
+  transform: rotate(-1.5deg);
+  border-radius: 5px;
+}
+
+.photo-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: #ffe3ed;
+}
+
+.caption {
+  margin-top: 17px;
+  color: #b34a75;
+  font-size: 15px;
+}
+
+.note {
+  text-align: left;
+  padding: 20px;
+  border: 1px dashed #ed9bb8;
+  border-radius: 20px;
+  background: #fff0f5;
+}
+
+.note p { margin: 0 0 17px; }
+.note p:last-child { margin-bottom: 0; }
+
+.music-box {
+  margin-top: 25px;
+  padding: 16px;
+  background: #fff0f6;
+  border-radius: 20px;
+}
+
+.music-box iframe {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: 210px;
+  border: none;
+  border-radius: 14px;
+  margin: 15px auto 0;
+}
+
+.small {
+  font: 12px Arial, sans-serif;
+  color: #a66c83;
+}
+
+.heart {
+  position: fixed;
+  pointer-events: none;
+  color: #e985a9;
+  opacity: 0.65;
+  animation: float 7s linear infinite;
+  z-index: -1;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh) rotate(0deg); }
+  to { transform: translateY(-110vh) rotate(35deg); }
+}
 </style>
 </head>
+
 <body>
-<div class="hearts" aria-hidden="true"><span>♡</span><span>♥</span><span>♡</span><span>♥</span></div>
+
+<span class="heart" style="left:8%;animation-delay:0s">♡</span>
+<span class="heart" style="left:85%;animation-delay:3s">♥</span>
+<span class="heart" style="left:55%;animation-delay:5s">♡</span>
+
 <main class="card">
+
+  <!-- OPENING SCREEN -->
   <section id="welcome">
-    <div class="tiny">a little something, just for you</div>
-    <div class="decor">🎀 💌 🎀</div>
-    <h1>Hey Rishabh…</h1>
-    <p>Someone has a tiny surprise for you.<br>Open it when you're ready, okay? ♡</p>
+    <div class="eyebrow">A little something, just for you</div>
+    <div class="bows">🎀 💌 🎀</div>
+
+    <h1>Hey Rishabh...</h1>
+
+    <p>
+      Someone has a tiny surprise for you.<br>
+      Open it when you're ready, okay? ♡
+    </p>
+
     <button id="openBtn">Open your surprise 💗</button>
-    <footer>made with a little extra love</footer>
+
+    <div class="footer">made with a little extra love ♡</div>
   </section>
 
+
+  <!-- LOVE LETTER SCREEN -->
   <section id="surprise" class="hidden">
-    <div class="tiny">to my favourite person</div>
+
+    <div class="eyebrow">To my favourite person</div>
+
     <h1>For You, Rishabh ♡</h1>
+
+    <!-- YOUR PHOTO -->
     <div class="photo-frame">
-      <!-- Replace rishabh-photo.jpeg with your photo's exact filename -->
-      <img id="rishabhPhoto" src="rishabh-photo.jpeg" alt="A favourite photo of Rishabh"
-           onerror="this.style.display='none';document.getElementById('photoFallback').style.display='block';">
-      <div id="photoFallback" style="display:none;aspect-ratio:4/5;background:#ffe5ee;place-content:center;padding:20px;color:#a83e68;">
-        <div style="font-size:42px">📸 ♡</div>
-        <p>Add your photo as <b>rishabh-photo.jpeg</b> to this folder</p>
-      </div>
-      <div class="caption">my favourite face, always ♡</div>
+
+      <img
+        src="rishabh-photo.jpeg"
+        alt="My favourite photo of Rishabh"
+        id="rishabhPhoto"
+      >
+
+      <div class="caption">My favourite face, always ♡</div>
+
     </div>
+
+
+    <!-- PERSONAL LOVE NOTE -->
     <div class="note">
-      <p>My Rishabh, 💗</p>
-      <p>I don't think words will ever be enough to explain how much you mean to me. You make ordinary moments feel special, and even on the most normal days, the thought of you can make me smile.</p>
-      <p>If I could give you one thing, it would be the chance to see yourself through my eyes — so you could understand how special you are to me, and how grateful I am to have you in my life.</p>
-      <p>Whatever life brings, I hope you always remember that there's someone cheering for you, believing in you, and caring about you more than you know.</p>
-      <p>You're my favourite person, my soft place to land, and one of the sweetest parts of my world. This little page is just a tiny reminder of that. ♡</p>
-      <p style="text-align:right;color:#a83e68">Always yours,<br><b>your girl 💌</b></p>
+
+      <p><strong>My Rishabh, 💗</strong></p>
+
+      <p>
+        I don't think words will ever be enough to explain
+        how much you mean to me. You make ordinary moments
+        feel special, and even on the most normal days,
+        the thought of you can make me smile.
+      </p>
+
+      <p>
+        If I could give you one thing, it would be the chance
+        to see yourself through my eyes. Maybe then you would
+        understand how special you are to me and how grateful
+        I am to have you in my life.
+      </p>
+
+      <p>
+        I hope life gives you a thousand reasons to smile.
+        And whenever life feels difficult, I hope you remember
+        that there is someone cheering for you, believing in you,
+        and caring about you more than you know.
+      </p>
+
+      <p>
+        You are one of the sweetest parts of my world.
+        I may not always find the perfect words to tell you
+        what you mean to me, but I hope this little surprise
+        reminds you that you are loved. ♡
+      </p>
+
+      <p>
+        No matter how busy life gets, there will always be
+        a special little place for you in my heart.
+      </p>
+
+      <p style="text-align:right; color:#b33e70;">
+        Yours, always ♡<br>
+        <strong>Your girl 💌</strong>
+      </p>
+
     </div>
-    <button id="musicBtn">♫ Play our song</button>
-    <p class="music-help">Add your legally obtained song file as <b>our-song.mp3</b> in this folder.</p>
-    <audio id="song" src="our-song.mp3" preload="none"></audio>
-    <button id="againBtn" style="background:#f6d1df;color:#8c3e5c;box-shadow:none">Read it again ♡</button>
-    <footer>if you smiled even a little, my mission is complete. ♡</footer>
+
+
+    <!-- MUSIC -->
+    <div class="music-box">
+
+      <div style="font-size:25px">🎧 ♡ 🎶</div>
+
+      <p><strong>A little song for you</strong></p>
+
+      <p class="small">
+        Because some feelings sound better in music. 💗
+      </p>
+
+      <button id="musicBtn">♫ Play our song</button>
+
+      <div id="playerContainer" class="hidden">
+
+        <iframe
+          id="youtubePlayer"
+          title="Cry For Me - The Weeknd"
+          src="about:blank"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+      <p class="small">
+        If the song doesn't start automatically, tap Play in the player.
+      </p>
+
+    </div>
+
+    <button id="againBtn">Back to your surprise ♡</button>
+
+    <div class="footer">
+      If this made you smile, my mission is complete. 💗
+    </div>
+
   </section>
+
 </main>
+
+
 <script>
-  const welcome = document.getElementById('welcome');
-  const surprise = document.getElementById('surprise');
-  const song = document.getElementById('song');
-  const musicBtn = document.getElementById('musicBtn');
-  document.getElementById('openBtn').addEventListener('click', () => {
-    welcome.classList.add('hidden');
-    surprise.classList.remove('hidden');
-    window.scrollTo({top:0,behavior:'smooth'});
-  });
-  document.getElementById('againBtn').addEventListener('click', () => {
-    surprise.classList.add('hidden');
-    welcome.classList.remove('hidden');
-    song.pause(); song.currentTime=0; musicBtn.textContent='♫ Play our song';
-  });
-  musicBtn.addEventListener('click', async () => {
-    if (song.paused) {
-      try { await song.play(); musicBtn.textContent='Ⅱ Pause our song'; }
-      catch(e) { alert('Please add your song file named our-song.mp3 to this website folder first.'); }
-    } else { song.pause(); musicBtn.textContent='♫ Play our song'; }
-  });
-  song.addEventListener('ended', () => musicBtn.textContent='♫ Play our song');
+const welcome = document.getElementById("welcome");
+const surprise = document.getElementById("surprise");
+const openBtn = document.getElementById("openBtn");
+const againBtn = document.getElementById("againBtn");
+const musicBtn = document.getElementById("musicBtn");
+const playerContainer = document.getElementById("playerContainer");
+const youtubePlayer = document.getElementById("youtubePlayer");
+
+const songURL =
+  "https://www.youtube-nocookie.com/embed/bn8gP5N8hqM?autoplay=1&playsinline=1";
+
+openBtn.addEventListener("click", function() {
+  welcome.classList.add("hidden");
+  surprise.classList.remove("hidden");
+
+  // Try starting the song after the visitor taps the surprise.
+  playerContainer.classList.remove("hidden");
+  youtubePlayer.src = songURL;
+  musicBtn.textContent = "♫ Pause our song";
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+musicBtn.addEventListener("click", function() {
+  if (playerContainer.classList.contains("hidden")) {
+    playerContainer.classList.remove("hidden");
+    youtubePlayer.src = songURL;
+    musicBtn.textContent = "♫ Pause our song";
+  } else {
+    // Stop playback by unloading the embedded player.
+    playerContainer.classList.add("hidden");
+    youtubePlayer.src = "about:blank";
+    musicBtn.textContent = "♫ Play our song";
+  }
+});
+
+againBtn.addEventListener("click", function() {
+  // Stop music and return to the opening screen.
+  playerContainer.classList.add("hidden");
+  youtubePlayer.src = "about:blank";
+  musicBtn.textContent = "♫ Play our song";
+
+  surprise.classList.add("hidden");
+  welcome.classList.remove("hidden");
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 </script>
+
 </body>
 </html>
