@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Rishabh ♡</title>
+<title>For Rishabh, With Love ♡</title>
 
 <style>
 * { box-sizing: border-box; }
@@ -48,7 +48,7 @@ h1 {
 
 p {
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
 button {
@@ -69,10 +69,7 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
-.bows {
-  margin: 20px;
-  font-size: 28px;
-}
+.bows { margin: 20px; font-size: 28px; }
 
 .footer {
   margin-top: 24px;
@@ -112,12 +109,12 @@ button:focus-visible {
   background: #fff0f5;
 }
 
-.note p { margin: 0 0 17px; }
+.note p { margin: 0 0 20px; }
 .note p:last-child { margin-bottom: 0; }
 
 .music-box {
   margin-top: 25px;
-  padding: 16px;
+  padding: 18px 12px;
   background: #fff0f6;
   border-radius: 20px;
 }
@@ -133,7 +130,7 @@ button:focus-visible {
 }
 
 .small {
-  font: 12px Arial, sans-serif;
+  font: 12px/1.7 Arial, sans-serif;
   color: #a66c83;
 }
 
@@ -178,115 +175,97 @@ button:focus-visible {
     <div class="footer">made with a little extra love ♡</div>
   </section>
 
-
-  <!-- LOVE LETTER SCREEN -->
+  <!-- SURPRISE AND LOVE LETTER -->
   <section id="surprise" class="hidden">
 
-    <div class="eyebrow">To my favourite person</div>
+    <div class="eyebrow">For my favourite person, miles away ♡</div>
 
     <h1>For You, Rishabh ♡</h1>
 
-    <!-- YOUR PHOTO -->
+    <!-- YOUR UPLOADED PHOTO -->
     <div class="photo-frame">
-
       <img
         src="rishabh-photo.jpeg"
         alt="My favourite photo of Rishabh"
         id="rishabhPhoto"
       >
-
       <div class="caption">My favourite face, always ♡</div>
-
     </div>
 
-
-    <!-- PERSONAL LOVE NOTE -->
+    <!-- YOUR EXACT PERSONAL MESSAGE -->
     <div class="note">
 
       <p><strong>My Rishabh, 💗</strong></p>
 
       <p>
-        I don't think words will ever be enough to explain
-        how much you mean to me. You make ordinary moments
-        feel special, and even on the most normal days,
-        the thought of you can make me smile.
+        Maybe we can't be together every day.... hold hands whenever
+        we want... or hug each other after a long day. But even with
+        all these miles between us, Rishabhhhhh you're still my
+        favourite part of every day.
       </p>
 
       <p>
-        If I could give you one thing, it would be the chance
-        to see yourself through my eyes. Maybe then you would
-        understand how special you are to me and how grateful
-        I am to have you in my life.
+        I know long distance isn't always easy, but soooon, the
+        distance will just be a memory, and we'll finally get to
+        live all the little moments we've been dreaming about.
       </p>
 
       <p>
-        I hope life gives you a thousand reasons to smile.
-        And whenever life feels difficult, I hope you remember
-        that there is someone cheering for you, believing in you,
-        and caring about you more than you know.
+        Until then, it's you, it's me, and it's us .... no matter
+        how many miles are between us. ♡
       </p>
 
       <p>
-        You are one of the sweetest parts of my world.
-        I may not always find the perfect words to tell you
-        what you mean to me, but I hope this little surprise
-        reminds you that you are loved. ♡
+        I miss you, Rishabh......haniiiiii....bby.... And I'm still
+        choosing you, every single day.
       </p>
 
-      <p>
-        No matter how busy life gets, there will always be
-        a special little place for you in my heart.
-      </p>
-
-      <p style="text-align:right; color:#b33e70;">
+      <p style="text-align:right;color:#b33e70;">
         Yours, always ♡<br>
         <strong>Your girl 💌</strong>
       </p>
 
     </div>
 
-
-    <!-- MUSIC -->
+    <!-- THE WEEKND SONG -->
     <div class="music-box">
 
-      <div style="font-size:25px">🎧 ♡ 🎶</div>
+      <div style="font-size:28px;">🎧 💗 🎶</div>
 
-      <p><strong>A little song for you</strong></p>
+      <p><strong>A song that reminds me of you</strong></p>
 
       <p class="small">
-        Because some feelings sound better in music. 💗
+        Cry For Me — The Weeknd ♡
       </p>
 
       <button id="musicBtn">♫ Play our song</button>
 
       <div id="playerContainer" class="hidden">
-
         <iframe
           id="youtubePlayer"
-          title="Cry For Me - The Weeknd"
+          title="Cry For Me by The Weeknd"
           src="about:blank"
           allow="autoplay; encrypted-media; picture-in-picture"
           allowfullscreen>
         </iframe>
-
       </div>
 
       <p class="small">
-        If the song doesn't start automatically, tap Play in the player.
+        If it doesn't start automatically, press Play in the
+        music player. Keep this page open while listening. 💗
       </p>
 
     </div>
 
-    <button id="againBtn">Back to your surprise ♡</button>
+    <button id="againBtn">Back to the beginning ♡</button>
 
     <div class="footer">
-      If this made you smile, my mission is complete. 💗
+      Different places, same heart. Always us. 💗
     </div>
 
   </section>
 
 </main>
-
 
 <script>
 const welcome = document.getElementById("welcome");
@@ -300,14 +279,15 @@ const youtubePlayer = document.getElementById("youtubePlayer");
 const songURL =
   "https://www.youtube-nocookie.com/embed/bn8gP5N8hqM?autoplay=1&playsinline=1";
 
+function stopMusic() {
+  playerContainer.classList.add("hidden");
+  youtubePlayer.src = "about:blank";
+  musicBtn.textContent = "♫ Play our song";
+}
+
 openBtn.addEventListener("click", function() {
   welcome.classList.add("hidden");
   surprise.classList.remove("hidden");
-
-  // Try starting the song after the visitor taps the surprise.
-  playerContainer.classList.remove("hidden");
-  youtubePlayer.src = songURL;
-  musicBtn.textContent = "♫ Pause our song";
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
@@ -316,24 +296,16 @@ musicBtn.addEventListener("click", function() {
   if (playerContainer.classList.contains("hidden")) {
     playerContainer.classList.remove("hidden");
     youtubePlayer.src = songURL;
-    musicBtn.textContent = "♫ Pause our song";
+    musicBtn.textContent = "♫ Stop our song";
   } else {
-    // Stop playback by unloading the embedded player.
-    playerContainer.classList.add("hidden");
-    youtubePlayer.src = "about:blank";
-    musicBtn.textContent = "♫ Play our song";
+    stopMusic();
   }
 });
 
 againBtn.addEventListener("click", function() {
-  // Stop music and return to the opening screen.
-  playerContainer.classList.add("hidden");
-  youtubePlayer.src = "about:blank";
-  musicBtn.textContent = "♫ Play our song";
-
+  stopMusic();
   surprise.classList.add("hidden");
   welcome.classList.remove("hidden");
-
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 </script>
